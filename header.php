@@ -16,7 +16,5 @@
             <ul>
                 <li><a href="index.php">Home</a></li>
                 <li><a href="gallery.php">Gallery</a></li>
-                <li><a href="admin.php">Administrator</a></li>
-                <?php session_start(); if(isset($_SESSION['loggedin'])){ echo '<li><a href="logout.php">Logout</a></li>'; } ?>
             </ul>
         </nav>
