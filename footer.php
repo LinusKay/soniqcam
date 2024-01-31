@@ -1,6 +1,6 @@
         <footer>
             <ul>
-                <li>POWERED BY <a href="">SONIQCAM</a></li>
+                <li><?php echo $footer_text;?></li>
             </ul>
         </footer>
     </div>

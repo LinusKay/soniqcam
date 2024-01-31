@@ -2,10 +2,13 @@
 <?php 
 // SET NUMBER OF AVAILABLE CAMERAS
 // If stream image not provided in stream/camera<number>.jpg, "Offline" placeholder will be set
-$cams = 3;
+$cams = 1;
 
 // Currently selected camera
 $stream = 1;
+if($stream > $cams) {
+    $stream = $cams;
+}
 if(isset($_GET['stream'])) {
     if($_GET['stream'] > $cams) {
         $stream = 1;

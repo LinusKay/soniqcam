@@ -1,7 +1,18 @@
-A made-up IP camera software for use in various creative/tech projects. 
+# Soniqcam
+Soniqcam is an imaginary IP camera company providing fake products to fake people, created for use in [OSINT challenges](https://github.com/LinusKay/osint-challenges). Their flagship product, the Soniqcam Sprint EL52E is on shelves now, and you can build the software with this repo!
 
-/captures contains content for gallery.php
+This project uses PHP to run a camera dashboard. 
 
-/media contains placeholder media for use in the cameras operations
+## Directories
+`/captures` contains screenshots for display in the Gallery page. Any `.jpg` files within this folder will be displayed.
 
-/stream contains files related to media streaming from cameras (eg; latest stream images) shown in cameras on index.php
+`/media` contains internal media used by the dashboard. 
+
+`/stream` contains images for display on the camera viewing screen. The number of available camera sources can be set in config. All images should currently be named `camera_#_latest.jpg`, otherwise they will be ignored. If a camera has no matching image (eg: 3 cameras, but `camera_3_latest.jpg` is missing) then the source will show the placeholder "offline" image. 
+
+`/soniqcam.com` contains the soniqcam company's home page, with relevant product manuals.
+
+## Credentials
+The `admin` page is locked behind a very simple PHP login. The default credentials for this are stored within `login.php`, and are referenced in the `Soniqcam_Sprint_EL52E_Simple_User_Manual.pdf` within the Soniqcam.com dummy site. 
+
+If you're doing a challenge related to Soniqcam and you've stumbled upon this repo then SHOO! GET OUTTA HERE! 
