@@ -13,6 +13,6 @@ This project uses PHP to run a camera dashboard.
 `/soniqcam.com` contains the soniqcam company's home page, with relevant product manuals.
 
 ## Credentials
-The `admin` page is locked behind a very simple PHP login. The default credentials for this are stored within `login.php`, and are referenced in the `Soniqcam_Sprint_EL52E_Simple_User_Manual.pdf` within the Soniqcam.com dummy site. 
+The `admin` page is locked behind a very simple PHP login. The default credentials for this are stored within `login.php`, and are referenced in the `Soniqcam_Sprint_EL52E_Simple_User_Manual.pdf` within the Soniqcam.com dummy site. Presently, the admin page just has an example flag as its only content.
 
 If you're doing a challenge related to Soniqcam and you've stumbled upon this repo then SHOO! GET OUTTA HERE! 
